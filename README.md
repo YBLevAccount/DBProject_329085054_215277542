@@ -16,16 +16,9 @@ Our group at Lev has a clear target: to create a comprehensive database for a un
 
 #### The Components
 
-The "dormitories" component of the project comprises seven key entities:
-1. **Person**
-2. **Student**
-3. **Worker**
-4. **Manager**
-5. **Cleaner**
-6. **Building**
-7. **Room**
+The "dormitories" component of the project comprises seven key entities and one relationship.
 
-##### Entity Descriptions:
+#### Entities
 
 1. **Person**  
    Represents an individual associated with the dormitories. This entity holds basic information about the person, such as phone number and age.  
@@ -49,7 +42,6 @@ The "dormitories" component of the project comprises seven key entities:
    - **Inherits**: `Person`
    - **Key**: `ID` (Integer, Primary Key) - Inherited from `Person`.
    - **Fields**:
-     - `BuildingID` (Integer, Foreign Key) - References the building the worker is assigned to.
      - `HireDate` (Date) - The date the worker was hired.
 
 4. **Manager**  
@@ -58,7 +50,6 @@ The "dormitories" component of the project comprises seven key entities:
    - **Key**: `ID` (Integer, Primary Key) - Inherited from `Worker`.
    - **Fields**:
      - `Department` (String) - The department the manager is part of.
-     - `OfficeNumber` (String) - The office number of the manager (if applicable).
 
 5. **Cleaner**  
    Responsible for the cleanliness and upkeep of the dormitory buildings.  
@@ -73,7 +64,6 @@ The "dormitories" component of the project comprises seven key entities:
    - **Fields**:
      - `Name` (String) - The name of the building.
      - `Address` (String) - The address of the building.
-     - `NumberOfFloors` (Integer) - The number of floors in the building.
 
 7. **Room**  
    Represents a room within a dormitory building, accommodating students. It is a weak entity dependent on the `Building` entity.  
@@ -82,3 +72,17 @@ The "dormitories" component of the project comprises seven key entities:
      - `BuildingID` (Integer, Foreign Key) - References the building the room is part of.
    - **Fields**:
      - `Capacity` (Integer) - The number of students the room can accommodate.
+     - `FloorNumber` (Integer) - The floor number where the room is located.
+
+#### Relationships
+
+1. **WorksIn**  
+   Represents the relationship between a worker and the buildings they work in.  
+   - **Fields**:
+     - `WorkerID` (Integer, Foreign Key) - References the worker.
+     - `BuildingID` (Integer, Foreign Key) - References the building.
+     - **Composite Key**: (`WorkerID`, `BuildingID`)
+
+### Entity-Relationship Diagram (ERD)
+
+![ERD](ERD.png)

@@ -86,3 +86,7 @@ The "dormitories" component of the project comprises seven key entities and one 
 ### Entity-Relationship Diagram (ERD)
 
 ![ERD](ERD.png)
+
+### Data-Structure Diagram (DSD)
+
+![DSD](DSD.png)

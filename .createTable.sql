@@ -1,0 +1,68 @@
+CREATE TABLE Person
+(
+  Age INT NOT NULL,
+  PhoneNumber INT NOT NULL,
+  ID INT NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Building
+(
+  BuildingID INT NOT NULL,
+  Name INT NOT NULL,
+  PRIMARY KEY (BuildingID)
+);
+
+CREATE TABLE Room
+(
+  RoomID INT NOT NULL,
+  MaxCapacity INT NOT NULL,
+  BuildingID INT NOT NULL,
+  PRIMARY KEY (RoomID, BuildingID),
+  FOREIGN KEY (BuildingID) REFERENCES Building(BuildingID)
+);
+
+CREATE TABLE Worker
+(
+  HireDate INT NOT NULL,
+  ID INT NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Student
+(
+  EnrollmentDate INT NOT NULL,
+  Major INT NOT NULL,
+  ID INT NOT NULL,
+  RoomID INT,
+  BuildingID INT,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID) REFERENCES Person(ID),
+  FOREIGN KEY (RoomID, BuildingID) REFERENCES Room(RoomID, BuildingID)
+);
+
+CREATE TABLE Manager
+(
+  Department INT NOT NULL,
+  ID INT NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID) REFERENCES Worker(ID)
+);
+
+CREATE TABLE Cleaner
+(
+  Shift INT NOT NULL,
+  ID INT NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID) REFERENCES Worker(ID)
+);
+
+CREATE TABLE WorksIn
+(
+  ID INT NOT NULL,
+  BuildingID INT NOT NULL,
+  PRIMARY KEY (ID, BuildingID),
+  FOREIGN KEY (ID) REFERENCES Worker(ID),
+  FOREIGN KEY (BuildingID) REFERENCES Building(BuildingID)
+);

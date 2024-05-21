@@ -35,7 +35,7 @@ The dormitory control component of the project comprises seven key entities and 
      - `RoomID` (Integer, Foreign Key) - References the room the student is assigned to.
      - `BuildingID` (Integer, Foreign Key) - References the building the student's room is part of.
      - `EnrollmentDate` (Date) - The date the student enrolled in the dormitory.
-     - `FieldOfStudy` (String) - The student's major field of study.
+     - `Major` (String) - The student's major field of study.
 
 3. **Worker**
    - Represents a worker associated with the dormitories, including both managers and cleaners.
@@ -47,19 +47,17 @@ The dormitory control component of the project comprises seven key entities and 
    - Oversees either the facility maintenance or the overall administration of the dormitory.
    - **Inherits**: `Worker`
    - **Fields**:
-     - `DepartmentType` (String) - The type of department the manager is part of.
+     - `Department` (String) - The type of department the manager is part of.
 
 5. **Cleaner**
    - Responsible for the cleanliness and upkeep of the dormitory buildings.
    - **Inherits**: `Worker`
    - **Fields**:
-     - `ShiftType` (String) - The type of shift the cleaner works.
+     - `Shift` (String) - The type of shift the cleaner works.
 
 6. **Building**
    - Represents a dormitory building within the university campus.
    - **Key**: `BuildingID` (Integer, Primary Key) - A unique identifier for the building.
-   - **Fields**:
-     - `Address` (String) - The address of the building.
 
 7. **Room**
    - Represents a room within a dormitory building, accommodating students. It is a weak entity dependent on the Building entity.
@@ -68,7 +66,7 @@ The dormitory control component of the project comprises seven key entities and 
      - `BuildingID` (Integer, Foreign Key) - References the building the room is part of.
    - **Fields**:
      - `MaxCapacity` (Integer) - The maximum number of students the room can accommodate.
-     - `FloorNumber` (Integer) - The floor number where the room is located.
+     - `Floor` (Integer) - The floor number where the room is located.
 
 ### Relationships
 

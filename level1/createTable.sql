@@ -3,7 +3,7 @@ CREATE TABLE Person
   Age INT NOT NULL,
   PhoneNumber VARCHAR(20),
   ID INT NOT NULL,
-  name VARCHAR(20) NOT NULL,
+  Name VARCHAR(20) NOT NULL,
   PRIMARY KEY (ID)
 );
 

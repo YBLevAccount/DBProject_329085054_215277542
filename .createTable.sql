@@ -1,7 +1,7 @@
 CREATE TABLE Person
 (
   Age INT NOT NULL,
-  PhoneNumber INT NOT NULL,
+  PhoneNumber VARCHAR2(20),
   ID INT NOT NULL,
   PRIMARY KEY (ID)
 );
@@ -9,7 +9,7 @@ CREATE TABLE Person
 CREATE TABLE Building
 (
   BuildingID INT NOT NULL,
-  Name INT NOT NULL,
+  Name VARCHAR2(20) NOT NULL,
   PRIMARY KEY (BuildingID)
 );
 
@@ -24,7 +24,7 @@ CREATE TABLE Room
 
 CREATE TABLE Worker
 (
-  HireDate INT NOT NULL,
+  HireDate DATE NOT NULL,
   ID INT NOT NULL,
   PRIMARY KEY (ID),
   FOREIGN KEY (ID) REFERENCES Person(ID)
@@ -32,8 +32,8 @@ CREATE TABLE Worker
 
 CREATE TABLE Student
 (
-  EnrollmentDate INT NOT NULL,
-  Major INT NOT NULL,
+  EnrollmentDate DATE NOT NULL,
+  Major VARCHAR(20),
   ID INT NOT NULL,
   RoomID INT,
   BuildingID INT,
@@ -44,7 +44,7 @@ CREATE TABLE Student
 
 CREATE TABLE Manager
 (
-  Department INT NOT NULL,
+  Department VARCHAR(20),
   ID INT NOT NULL,
   PRIMARY KEY (ID),
   FOREIGN KEY (ID) REFERENCES Worker(ID)
@@ -52,7 +52,7 @@ CREATE TABLE Manager
 
 CREATE TABLE Cleaner
 (
-  Shift INT NOT NULL,
+  Shift VARCHAR(20),
   ID INT NOT NULL,
   PRIMARY KEY (ID),
   FOREIGN KEY (ID) REFERENCES Worker(ID)

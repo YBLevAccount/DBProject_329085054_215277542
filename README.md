@@ -59,7 +59,6 @@ The dormitory control component of the project comprises seven key entities and 
    - Represents a dormitory building within the university campus.
    - **Key**: `BuildingID` (Integer, Primary Key) - A unique identifier for the building.
    - **Fields**:
-     - `Name` (String) - The name of the building.
      - `Address` (String) - The address of the building.
 
 7. **Room**

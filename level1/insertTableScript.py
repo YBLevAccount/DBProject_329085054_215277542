@@ -92,10 +92,10 @@ def generate_insert_statements():
         place = random.randint(0, 2)
         for j in range(3):
             if place == j:
-                statements.append(gen_student(j * num_records + i, random.randint(1, 2), random.randint(1, num_records + 1)))
+                statements.append(gen_student(j * num_records + i, random.randint(1, 2), random.randint(1, num_records)))
             else:
                 statements.append(gen_worker(j * num_records + i))
-                statements.append(gen_worksin(j * num_records + i, random.randint(1, num_records + 1)))
+                statements.append(gen_worksin(j * num_records + i, random.randint(1, num_records)))
                 
     for i in range(1, 2 * num_records + 1):
         place = random.randint(0, 1)

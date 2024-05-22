@@ -1,5 +1,5 @@
 -- Select all records from each table
-
+USE Lev_MPDB;
 SELECT * FROM Person;
 SELECT * FROM Building;
 SELECT * FROM Room;

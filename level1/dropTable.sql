@@ -1,5 +1,5 @@
 -- Drop all tables script
-
+USE Lev_MPDB;
 DROP TABLE IF EXISTS WorksIn;
 DROP TABLE IF EXISTS Manager;
 DROP TABLE IF EXISTS Cleaner;

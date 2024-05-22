@@ -87,7 +87,8 @@ def generate_insert_statements():
     # Generate Person records
     for i in range(1, 3 * num_records + 1):
         statements.append(gen_person(i))
-        
+    
+    n = 1
     for i in range(1, num_records + 1):
         place = random.randint(0, 2)
         for j in range(3):
@@ -96,14 +97,20 @@ def generate_insert_statements():
             else:
                 statements.append(gen_worker(j * num_records + i))
                 statements.append(gen_worksin(j * num_records + i, random.randint(1, num_records)))
+                if n <= num_records:
+                    statements.append(gen_cleaner(j * num_records + i))
+                else:
+                    statements.append(gen_manager(j * num_records + i))
+                n += 1
                 
-    for i in range(1, 2 * num_records + 1):
+    '''    for i in range(1, 2 * num_records + 1):
         place = random.randint(0, 1)
         for j in range(2):
             if place == j:
                 statements.append(gen_cleaner(j * num_records + i))
             else:
                 statements.append(gen_manager(j * num_records + i))
+    '''
     return statements
 
 # Generate the insert statements

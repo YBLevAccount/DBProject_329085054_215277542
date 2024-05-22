@@ -79,9 +79,10 @@ The dormitory control component of the project comprises seven key entities and 
 
 ## Entity-Relationship Diagram (ERD)
 
-![ERD](ERD.png)
+![ERD](https://github.com/YBLevAccount/DataBaseProject/assets/100221042/933bc4ad-9691-47b0-a273-2c51ee6bf2ce)
+
 
 ## Data-Structure Diagram (DSD)
 
-![DSD](DSD.png)
+![DSD](https://github.com/YBLevAccount/DataBaseProject/assets/100221042/2ada7594-8545-4ef0-bfeb-c23d3e84df50)
 

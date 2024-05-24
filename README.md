@@ -105,6 +105,11 @@ for inserting the data, we have pictures from the methods used to generate the d
 ![GENR](level1/gen_Room.png)
 ![GENS](level1/gen_Student.png)
 ![GENW](level1/gen_Worker.png)
-![GENWI](leve1/gen_WorksIn.png)
+![GENWI](level1/gen_WorksIn.png)
 
 and also python script that helped a lot: [Script](level1/insertTableScript.py)
+
+picture of uploading the data:
+()
+picture of reloading the data using the backup file:
+()

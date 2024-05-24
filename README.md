@@ -86,3 +86,25 @@ The dormitory control component of the project comprises seven key entities and 
 
 ![DSD](https://github.com/YBLevAccount/DataBaseProject/assets/100221042/2ada7594-8545-4ef0-bfeb-c23d3e84df50)
 
+
+## The Data Base
+
+The base contains 4 scripts for operation:
+   - [Link Text](level1/createTable.sql) creates the tables
+   - [Link Text](level1/dropTable.sql) delete the tables
+   - [Link Text](level1/insertTable.sql) insert data
+   - [Link Text](level1/selectAll.sql) select all the data in the data base
+
+also we have [Link Text](level1/backup.sql) as a backup file for the data base
+
+for inserting the data, we have pictures from the methods used to generate the data
+![GENB](leve1/gen_Building.png)
+![GENC](leve1/gen_Cleaner.png)
+![GENM](leve1/gen_Manager.png)
+![GENP](leve1/gen_Person.png)
+![GENR](leve1/gen_Room.png)
+![GENS](leve1/gen_Student.png)
+![GENW](leve1/gen_Worker.png)
+![GENWI](leve1/gen_WorksIn.png)
+
+and also python script that helped a lot: [Link Text](level1/insertTableScript.py)

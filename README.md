@@ -90,21 +90,21 @@ The dormitory control component of the project comprises seven key entities and 
 ## The Data Base
 
 The base contains 4 scripts for operation:
-   - [Link Text](level1/createTable.sql) creates the tables
-   - [Link Text](level1/dropTable.sql) delete the tables
-   - [Link Text](level1/insertTable.sql) insert data
-   - [Link Text](level1/selectAll.sql) select all the data in the data base
+   - [CreateTable](level1/createTable.sql) creates the tables
+   - [DropTable](level1/dropTable.sql) delete the tables
+   - [InsertTable](level1/insertTable.sql) insert data
+   - [SelectAll](level1/selectAll.sql) select all the data in the data base
 
-also we have [Link Text](level1/backup.sql) as a backup file for the data base
+also we have [Backup](level1/backup.sql) as a backup file for the data base
 
 for inserting the data, we have pictures from the methods used to generate the data
-![GENB](leve1/gen_Building.png)
-![GENC](leve1/gen_Cleaner.png)
-![GENM](leve1/gen_Manager.png)
-![GENP](leve1/gen_Person.png)
-![GENR](leve1/gen_Room.png)
-![GENS](leve1/gen_Student.png)
-![GENW](leve1/gen_Worker.png)
+![GENB](level1/gen_Building.png)
+![GENC](level1/gen_Cleaner.png)
+![GENM](level1/gen_Manager.png)
+![GENP](level1/gen_Person.png)
+![GENR](level1/gen_Room.png)
+![GENS](level1/gen_Student.png)
+![GENW](level1/gen_Worker.png)
 ![GENWI](leve1/gen_WorksIn.png)
 
-and also python script that helped a lot: [Link Text](level1/insertTableScript.py)
+and also python script that helped a lot: [Script](level1/insertTableScript.py)

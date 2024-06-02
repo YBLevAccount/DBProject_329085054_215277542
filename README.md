@@ -110,6 +110,17 @@ for inserting the data, we have pictures from the methods used to generate the d
 and also python script that helped a lot: [Script](level1/insertTableScript.py)
 
 picture of uploading the data:
-()
+![Insert](level1/InsertAll.png)
+
+pictures of desc commands:
+![DESCB](level1/BuildingDesc.png)
+![DESCC](level1/CleanerDesc.png)
+![DESCM](level1/ManagerDesc.png)
+![DESCP](level1/PersonDesc.png)
+![DESCR](level1/RoomDesc.png)
+![DESCS](level1/StudentDesc.png)
+![DESCW](level1/WorkerDesc.png)
+![DESCI](level1/WorksInDesc.png)
+
 picture of reloading the data using the backup file:
-()
+![Backup](level1/backup.png)

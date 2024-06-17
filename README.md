@@ -129,11 +129,30 @@ picture of reloading the data using the backup file:
 ## Stage 2 - Queries
 
 there are 8 queries in the file [Queries](level2/queries.sql)
+   - Select all students managed by a specific manager and show the number of students managed by each manager
+   - Select rooms with more students than their capacity
+   - Promote a cleaner with 10 years of experience to a manager
+   - Delete the oldest student from each room where the number ofDelete students who are enrolled in rooms with a maximum capacity of 1 and have no workers assigned to their building
+   - Total number of cleaners and managers in each building with more than one cleaner and manager
+   - Most common major in each building
+   - Double the capacity of rooms where the current capacity equals the number of students in the room
+
 and 4 parameter queries in the file [ParamQueries](level2/paramqueries.sql)
+   - Find the top N buildings with the highest number of students in each building
+   - Find the number of students in each building with more than N students
+   - Find the top N oldest students
+   - Find the workers who work in buildings with more than N students
+
+there are also 3 constraints in [Constraints](level2/Constraints.sql):
+   - rooms must have capaticy of more then zero
+   - hire date cannot be in the future
+   - default Major for new students
+
 here are pictures of the scripts:
 
 ![Queries](level2/queries.png)
 ![ParamQueries](level2/paramqueries.png)
+![Constraints](level2/Constraints.png)
 
 also there is a new restrictions file and a backup
 (add pics and files)

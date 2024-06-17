@@ -124,3 +124,16 @@ pictures of desc commands:
 
 picture of reloading the data using the backup file:
 ![Backup](level1/backup.png)
+
+
+## Stage 2 - Queries
+
+there are 8 queries in the file [Queries](level2/queries.sql)
+and 4 parameter queries in the file [ParamQueries](level2/paramqueries.sql)
+here are pictures of the scripts:
+
+![Queries](level2/queries.png)
+![ParamQueries](level2/paramqueries.png)
+
+also there is a new restrictions file and a backup
+(add pics and files)

@@ -156,3 +156,25 @@ here are pictures of the scripts:
 
 also there is a new backup in the file:
 [Backup2](level2/backup2.sql)
+
+## stage 3 - function and procedures
+
+in this stage we have 6 files:
+   - [Func1](level3/function1.sql)
+     params: building ID
+     return: the amount of workers in the given building
+   - [Func2](level3/function2.sql)
+     params: major (string)
+     returns: the amout of students in this major
+   - [Proc1](level3/procedure1.sql)
+     insert new student into room
+     params: studentID, room key
+     errors: 45000 if room is full 
+   - [Proc2](level3/procedure2.sql)
+     promote worker to manager
+     params: workerID, department
+     error: 45000 if the ID is student ID 
+   - [Main1](level3/main_function1.sql)
+     calls function1 and procedure1
+   - [Main2](level3/main_functio2.sql)
+   - calls function2 and procedure2

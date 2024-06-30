@@ -154,5 +154,5 @@ here are pictures of the scripts:
 ![ParamQueries](level2/paramqueries.png)
 ![Constraints](level2/Constraints.png)
 
-also there is a new restrictions file and a backup
-(add pics and files)
+also there is a new backup in the file:
+[Backup2](level2/backup2.sql)

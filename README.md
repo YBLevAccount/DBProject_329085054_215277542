@@ -159,7 +159,7 @@ also there is a new backup in the file:
 
 ## stage 3 - function and procedures
 
-in this stage we have 6 files:
+in this stage we have 7 files:
    - [Func1](level3/function1.sql)
      params: building ID
      return: the amount of workers in the given building
@@ -176,5 +176,25 @@ in this stage we have 6 files:
      error: 45000 if the ID is student ID 
    - [Main1](level3/main_function1.sql)
      calls function1 and procedure1
-   - [Main2](level3/main_functio2.sql)
-   - calls function2 and procedure2
+   - [Main2](level3/main_function2.sql)
+     calls function2 and procedure2
+   - [Backup3](level3/backup3.sql)
+     backupfile
+
+to prove the functions work, here are pictures from the main functions:
+   - main1 before:
+   - ![Main1before](level3/main1before.jpeg)
+   - main1 after:
+   - ![Main1after](level3/main1after.jpeg)
+   - main1 first print:
+   - ![Main1print1](level3/main1print1.jpeg)
+   - main1 second print:
+   - ![Main1before](level3/main1print2.jpeg)
+   - main2 before:
+   - ![Main2before](level3/main2before.jpeg)
+   - main2 after:
+   - ![Main2after](level3/main2after.jpeg)
+   - main2 first print:
+   - ![Main2print1](level3/main2print1.jpeg)
+   - main2 second print:
+   - ![Main2before](level3/main2print2.jpeg)

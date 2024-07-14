@@ -246,9 +246,11 @@ Now there are 2 view, one for the old data and one for the new data, each has a 
    - the third is Average credits of courses per department
 
 picture of the queries:
-![View1](level4/view1.sql)
-![View2](level4/view2.sql)
-![View3](level4/view3.sql)
+![View1](level4/view1.png)
+
+![View2](level4/view2.png)
+
+![View3](level4/view3.png)
 
 and to end the project, the final backup:
 [FinalBackup](level4/finalBackup.sql)

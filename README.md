@@ -232,7 +232,10 @@ The next thing is to add the changes to our own project, we used 2 methods:
 we did it because we cannot use the other project design but we did not intend to rewrite the CreateTable from Zero.
 
 The file with the changes:
-![Integrate](level4/integrate.sql)
+[Integrate](level4/integrate.sql)
+
+and a picture of the file running:
+![Integrate](level4/integrate.png)
 
 there is also new insert for checking the project in this File 
 [NewInsert](level4/newInsert.sql)

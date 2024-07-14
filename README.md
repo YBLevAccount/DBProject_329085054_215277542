@@ -198,3 +198,54 @@ to prove the functions work, here are pictures from the main functions:
    - ![Main2print1](level3/main2print1.jpeg)
    - main2 second print:
    - ![Main2before](level3/main2print2.jpeg)
+
+
+## stage 4 - intefration
+This stage started very poorly, the backup from the project we need to integrate did not work.
+![DidntWork](level4/DidntWork.png)
+
+so we had to use different parts of their ode and run it under a new localhost.
+To start, we need to use the reverse engineer tool in MySql, we get the following diagram:
+
+![ReverseDiagram](level4/newDSD.png)
+
+We reversed engineered the DSD and got a new ERD:
+![ReverseDiagram](level4/newERD.png)
+
+Now the part of the integration, the other code was not designed well, things that should have been 1 attribute
+were entity with 6 attributes. there were no weak entities or sub entities. the whole design was bad, to overcome
+the problem we took only the core of the project:
+   - student may be in university and not in the dorms, so there are 2 different times variables.
+   - teacher is a new worker that has connetions to courses
+   - courses are new entity that connect teacher , student and a grade system.
+we deleted every repeating element, added superentities and merged with our own superentities.
+
+The United ERD is:
+![SharedERD](level4/sharedERD.png)
+
+as a result, the United DSD is:
+![SharedDSD](level4/sharedDSD.png)
+
+The next thing is to add the changes to our own project, we used 2 methods:
+   - our project is changes using AlterTable
+   - the new design is added using CreateTable (no other way to add it)
+we did it because we cannot use the other project design but we did not intend to rewrite the CreateTable from Zero.
+
+The file with the changes:
+![Integrate](level4/integrate.sql)
+
+there is also new insert for checking the project in this File 
+[NewInsert](level4/newInsert.sql)
+
+Now there are 2 view, one for the old data and one for the new data, each has a some queries
+   - the first is number of sudent and avarege age in a building
+   - the second is Number of courses taught by each teacher
+   - the third is Average credits of courses per department
+
+picture of the queries:
+![View1](level4/view1.sql)
+![View2](level4/view2.sql)
+![View3](level4/view3.sql)
+
+and to end the project, the final backup:
+[FinalBackup](level4/finalBackup.sql)
